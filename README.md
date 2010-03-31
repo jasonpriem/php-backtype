@@ -11,7 +11,7 @@
 3- Call the methods you want to get your data.  These are documented in the code and unit tests, and on the [backtweets api docs](http://www.backtype.com/developers).  Here's an example of getting the number of comments per page:
 
     $url = "http://blog.backtype.com/2009/12/tweetcount-updated-supports-wordpress-2-9-bitly-pro/";
-    echo $bt->comments_by_page($url);
+    echo $bt->commentsByPage($url);
 
 This is the first wrapper like this I've written, so I'm sure it's not perfect. If you have any trouble, let me know and I'll try to fix it.  Enjoy, and thanks to the folks at BackType for the cool API!
 
