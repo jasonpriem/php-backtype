@@ -251,6 +251,16 @@ class backtype {
       return $this->curlGet($uri);
    }
 
+   /**
+    * Retrieve the rate limiting status for a given API key.
+    * See {@link http://www.backtype.com/developers} for documentation
+    */
+   public function rateLimitStatus() {
+	  $base = "http://api.backtype.com/rate_limit_status";
+	  $uri = $this->makeUri($base);
+	
+	  return $this->curlGet($uri);
+   }
 
    /**
     * Constructs a BackType api request string
